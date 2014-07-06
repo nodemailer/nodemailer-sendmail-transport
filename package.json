@@ -1,0 +1,31 @@
+{
+  "name": "nodemailer-sendmail-transport",
+  "version": "0.1.0",
+  "description": "Sendmail transport for Nodemailer",
+  "main": "src/sendmail-transport.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andris9/nodemailer-sendmail-transport.git"
+  },
+  "keywords": [
+    "Sendmail",
+    "Nodemailer"
+  ],
+  "author": "Andris Reinman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andris9/nodemailer-sendmail-transport/issues"
+  },
+  "homepage": "http://github.com/andris9/nodemailer-sendmail-transport",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-mocha-test": "~0.10.0",
+    "sinon": "^1.9.0"
+  }
+}
