@@ -122,7 +122,7 @@ SendmailTransport.prototype.send = function(mail, callback) {
                 callback(e);
             } else {
                 callback(null, {
-                    messageId: mail.message.getHeader('message-id')
+                    messageId: (mail.message.getHeader('message-id') || '').replace(/[<>\s]/g, '')
                 });
             }
         }
