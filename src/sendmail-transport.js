@@ -61,14 +61,19 @@ SendmailTransport.prototype.send = function(mail, callback) {
     mail.message.keepBcc = true;
 
     var envelope = mail.data.envelope || mail.message.getEnvelope(),
-        args = this.args ? this.args.slice() : ['-f'].concat(envelope.from).concat(envelope.to),
+        args,
         sendmail,
         cbCounter = 2,
         didCb,
         marker = 'SendmailTransport.sendMail',
         transform;
 
-    args.unshift('-i'); // force -i to keep single dots
+    if (this.args) {
+        // force -i to keep single dots
+        args = ['-i'].concat(this.args);
+    } else {
+        args = ['-i'].concat(envelope.from ? ['-f', envelope.from] : []).concat(envelope.to);
+    }
 
     try {
         sendmail = this._spawn(this.path, args);
