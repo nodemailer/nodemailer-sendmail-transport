@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-sendmail-transport",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Sendmail transport for Nodemailer",
   "main": "src/sendmail-transport.js",
   "scripts": {
