@@ -4,4 +4,4 @@
 
 Sendmail transport module for Nodemailer.
 
-See [Nodemailer homepage](https://nodemailer.com/transports/sendmail/) for documentation and terms of using SES.
+See [Nodemailer homepage](https://nodemailer.com/transports/sendmail/) for documentation and terms of using Sendmail.
